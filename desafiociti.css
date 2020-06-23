@@ -1,0 +1,85 @@
+.photo {
+    width: 150px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3.0px;
+    border-radius: 2px;
+    margin-top: 40px;
+}
+
+.texto {
+    font-family: 'Bitter';
+    font-size: 12.0pt;
+    max-width: 600px;
+    text-align: justify;
+    text-indent: 20px;
+    box-sizing: border-box;
+    color: #F1F1F1;
+    margin-top: 20px;
+}
+
+#left{
+    position: absolute;
+    left: 28%;
+    top: 68%;
+}
+
+#right {
+    position: absolute;
+    top: 68%;
+    left: 48%;
+}
+
+.row {
+    position: absolute;
+    left: 30%;
+    top: 105%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.coluna {
+    flex: 25%;
+    max-width: 20%;
+    padding: 0 4px;
+}
+
+.coluna img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+body {
+    background: url("https://i.pinimg.com/474x/0f/66/5a/0f665a050f93faa7e21374fdc3ea0789.jpg");
+    background-position: top;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+h2 {
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0, 4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+
+}

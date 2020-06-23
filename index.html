@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+ <!-- oii, isso é um comentario :)--> <!-- esse HTML entre maior e menor se chama uma TAG-->
+ <!--
+    HTML
+        
+    Hypertext: são textos que aceitam links
+
+    Markup: marcação
+
+    Language: linguagem (HTML não é linguagem de programação )
+
+
+
+    -->
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <!--responsável por receber configurções da página-->
+        <title>Casa Criativa</title>
+
+        <style>
+            /**
+            CSS:
+            
+            Cascading Styles Sheet
+
+            */
+
+            body {
+                background: #e5e5e5;
+                color: #25282b;
+
+                text-align: center;
+            }
+            button{
+               color: #ff5E84;
+               border: none;
+               font-weight: bold;
+               background:none ;
+           }
+            #fat2{
+                color: white;
+                background: #ff5E84;
+            }
+            #footer a{
+                color: #25282B;
+                text-decoration: none;
+            }
+
+
+
+
+        </style>
+
+
+    </head>
+
+
+
+    <body>
+       <img src="logo.png" alt="Imagem da Logomarca">
+       <p>
+        Ficar em casa em períodos longos, não deve ser nada fácil.
+       </p>
+       <p>
+        Por isso, iremos catalogar ideias, <strong>brincadeiras, jogos, filmes, livros, cursos, dicas</strong> e tudo que for necessário para tornar esse momento mais interessante.
+       </p>
+       <p>
+        Comece clicando em ver ideias para ver as  ideias cadastradas e contribua adicioando a sua ideia.
+       </p>
+        <div class="fat"> 
+            <button> + Adicionar Ideia</button>
+            <button id="fat2"> Ver Ideias</button>
+        </div>
+       <p id="footer">com ❤️ <a href="http://rocketseat.com.br">Rocketseat</a></p>
+
+       <script>
+
+        document.getElementById("fat2").addEventListener("click",function(){
+            console.log(10)
+            document.querySelector("#footer").classList.toogle("hide")
+            })
+       </script>
+
+
+
+    </body>
+
+
+
+
+
+ 
+</html>
+
+
+
+    
